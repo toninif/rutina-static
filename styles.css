@@ -1,0 +1,70 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tipografía y fondo */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Controles */
+#controls {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#controls label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+#controls select {
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+}
+
+/* Tarjetas */
+#rutina .card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#rutina .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+#rutina .card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+}
+#rutina .card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+  #rutina .card {
+    padding: 0.8rem 1rem;
+  }
+  #rutina .card h4 {
+    font-size: 1.1rem;
+  }
+}
