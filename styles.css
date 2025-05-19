@@ -1,25 +1,13 @@
-/* Reset básico */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Tipografía y fondo */
 body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   color: #333;
   padding: 1rem;
 }
-
-/* Encabezado */
 header {
   text-align: center;
   margin-bottom: 1rem;
 }
-
-/* Controles */
 #controls {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -32,8 +20,6 @@ header {
   padding: 0.3rem 0.6rem;
   font-size: 1rem;
 }
-
-/* Tarjetas */
 #rutina .card {
   background: #fff;
   border-radius: 0.75rem;
@@ -51,20 +37,16 @@ header {
   margin-bottom: 0.5rem;
   color: #0066cc;
 }
-#rutina .card p {
-  font-size: 1rem;
-  line-height: 1.4;
+.ejercicio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    padding: 0.5rem;
-  }
-  #rutina .card {
-    padding: 0.8rem 1rem;
-  }
-  #rutina .card h4 {
-    font-size: 1.1rem;
-  }
+.ejercicio input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+.ejercicio label {
+  margin-left: 0.5rem;
+  font-size: 1rem;
 }
